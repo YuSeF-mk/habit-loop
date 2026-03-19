@@ -273,6 +273,7 @@ tableBody.addEventListener("click", (e) => {
   } else if (status === "unchecked") {
     Completed.splice(Completed.indexOf(id), 1);
   }
+  saveToStorage();
 });
 //! refresh checked cells in table :----------------->>
 // getting all cells:
