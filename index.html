@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Habit Loop</title>
+  <link rel="icon" href="./assets/habit_loop_logo.png" type="image/x-icon" />
+  <meta name="description" content="a project to track tasks weekly, also detailed tasks each day" />
+  <meta name="author" content="Youssef Mellouk" />
+  <script src="https://kit.fontawesome.com/620ba12140.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/style.css" />
+  <!-- <link rel="stylesheet" href="./styles1.css" /> -->
+</head>
+
+<body>
+  <header>
+    <div id="brand">
+      <img src="./assets/habit_loop_logo.png" title="Logo of Shiny Tasks project" alt="Logo of Shiny Tasks project" />
+      <p>Habit Loop</p>
+    </div>
+    <div id="topBtns">
+      <button id="addBtn" class="btn btn-success">Add Task</button>
+    </div>
+  </header>
+  <hr />
+  <!--* a form to add tasks -->
+  <dialog id="taskDialog">
+    <form autocomplete="off" id="taskForm">
+      <label for="newTask">Type the Task Name: </label>
+      <input type="text" id="newTask" name="taskName" placeholder="type a Habit..." />
+      <div id="formActions">
+        <input type="button" value="cancel" />
+        <input type="submit" value="add" />
+        <input type="reset" value="reset" />
+      </div>
+    </form>
+  </dialog>
+  <main>
+    <span id="currentTime"></span>
+    <!--* buttons to switch dates and add tasks -->
+    <div id="tableBTnsGeneral">
+      <div id="tableBTns">
+        <button class="tableBTn btn" id="leftWeek">
+          <i class="fa-solid fa-angle-left"></i>
+        </button>
+        <button class="tableBTn btn" id="current">Current Week</button>
+        <button class="tableBTn btn" id="rightweek">
+          <i class="fa-solid fa-angle-right"></i>
+        </button>
+      </div>
+    </div>
+    <!--* a table where to track tasks -->
+    <div id="tableContainer">
+      <table id="mainTable">
+        <thead id="thead">
+          <tr>
+            <th id="headTh">Tasks</th>
+            <th id="day_cell_1">Mon</th>
+            <th id="day_cell_2">Tue</th>
+            <th id="day_cell_3">Wed</th>
+            <th id="day_cell_4">Thu</th>
+            <th id="day_cell_5">Fri</th>
+            <th id="day_cell_6">Sat</th>
+            <th id="day_cell_7">Sun</th>
+          </tr>
+        </thead>
+        <tbody id="tasks_tbody"></tbody>
+      </table>
+    </div>
+    <div class="toast">
+      <div class="toast-content">
+        <div class="toast-body"></div>
+      </div>
+    </div>
+  </main>
+  <!--* toast for messages to user -->
+  <footer>
+    <div id="footerbrand">
+      <img src="./assets/habit_loop_logo.png" title="Logo of Shiny Tasks project" alt="Logo of Shiny Tasks project" width="50" />
+      <p>&copy; Youssef. MK - 01/12/2026</p>
+    </div>
+    <div class="footer-links">
+      <a href="https://github.com/YuSeF-mk" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      <a href="https://www.linkedin.com/in/youssefmk458/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+      <a href="mailto:youssef.mk.458@gmail.com"><i class="fas fa-envelope"></i> Contact</a>
+    </div>
+  </footer>
+  <script src="./js/script.js" defer></script>
+</body>
+
+</html>
