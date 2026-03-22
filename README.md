@@ -1,4 +1,4 @@
->Live Demo : https://yusef-mk.github.io/habit-loop/
+>Live Demo : https://youssef-mellouk.github.io/habit-loop/
 
 >habit loop Screenshot :
 ![Habit Loop Screenshot](assets/habit_loop.png)
